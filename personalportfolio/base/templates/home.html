@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <script src="" async defer></script>
+    </head>
+    <body>
+
+            <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Student Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">About Me <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#Projects" class="t-white roboto">Projects <i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#Contact" class="t-white roboto">Contact <i class="fa-solid fa-rocket"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppinss">Hi, I'm</h6>
+                <h1 class="t-white">Arnab Mukherjee</h1>
+                <h4 class="poppinss">Computer Science Student</h4>
+                <a href="{% static 'pdf/resume.pdf' %}"  target="_blank">
+                    <button class="btn poppins">Resume</button></a>
+                    
+                <a class="btn live poppins" id="hireme" href="#Contact"
+                    target="_self">Let's Talk</a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+                <img src="{% static 'images/mypic.png'%}" alt="{% static 'images/altimg.png' %}">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="t-center my-2 t-white f-2">About Me</h1>
+        <div class="about-container flex s-around ">
+            <div class=" about-left flex s-center items-center">
+                <!-- Here in src replade the given link with your secondary image link -->
+                <img src="{%static 'images/dog.png'%}" alt="{%static 'images/altimg.png'%}" style="width: 60%;">
+            </div>
+
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins">Arnab Mukherjee</h1>
+                    <p class="t-white poppins">My name is Arnab Mukherjee.I’m a B.tech student of KIIT studying Computer Science & Engineering.I have always been passionate about solving problems in general. I am quite proficient in solving problems related to data structures and algorithms.
+                        and other than that,I am also familiar with competitive programming upto a medium level. I also have a passion for building web-based apps in general and building something related to computer vision.
+                    </p>
+                    <a class="btn " id="hireme" href="">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Skills Section -->
+      <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Skills</h1>
+        <div class="services-container flex s-around h-50">
+        <div class=" skills-left flex s-center items-center">
+            <img src="{%static 'images/pro.png'%}" alt="{%static 'images/altimg.png'%}">
+        </div>
+
+        <div class="skills-right flex items-center">
+            <div class="skillss-container">
+                <div class="java bar p-relative"><span class="bar-content left t-white">Data structures and Algorithms</span><span
+                        class="bar-content right-skills t-white">60%</span></div>
+                <div class="html bar p-relative"><span class="bar-content left t-white">C++</span><span
+                        class="bar-content right-skills t-white">70%</span></div>
+                <div class="css bar p-relative"><span class="bar-content left t-white">HTML,CSS,JS</span><span
+                        class="bar-content right-skills t-white">40%</span></div>
+                <div class="js bar p-relative"><span class="bar-content left t-white">Java</span><span
+                        class="bar-content right-skills t-white">50%</span></div>
+                <div class="python bar p-relative"><span class="bar-content left t-white">Python</span><span
+                        class="bar-content right-skills t-white">50%</span></div>
+                <div class="mysql bar p-relative"><span class="bar-content left t-white">MySQL</span><span
+                        class="bar-content right-skills t-white">50%</span></div>        
+            </div>
+        </div>
+        </div>
+    </section>
+
+      <!-- Projects Section -->
+      <section id="Projects">
+        <h1 class=" t-center my-2 t-white f-2">Projects</h1>
+        <div class="projects-container flex s-center">
+            <div class="projects-item flex f-col s-center items-center">
+               
+                <h1 class="t-white poppins">Leads Tracker</h1>
+                <p class="t-white poppins"> Google chrome extension,that allows users to keep track of useful websites,links,names all at one place. Languages Used: HTML, CSS, JavaScript</p>
+                <div class="buttons flex s-around">
+                    <a href=""
+                        target="_blanks" class="btn mx-1 m-top">GitHub</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+               
+                <h1 class="t-white poppins">My Portfolio</h1>
+                <p class="t-white poppins">Portfolio website created with the help of Django,HTML,CSS,Javascript</p>
+                <div class="buttons flex s-around">
+                    <a href="" target="_blanks"
+                        class="btn mx-1 m-top">GitHub</a>
+                    <a href="#" target="_blanks" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+
+            <div class="projects-item flex f-col s-center items-center">
+               
+                <h1 class="t-white poppins">Sentiment Analyzer and Summarizer</h1>
+                <p class="t-white poppins">Analyzes Sentiments of web scraped data and summarises the text content with BeautifulSoup, TextBlob libraries of Python.</p>
+                <div class="buttons flex s-around">
+                    <a href="" target="_blanks"
+                        class="btn mx-1 m-top">GitHub</a>
+                </div>
+            </div>
+
+            <div class="projects-item flex f-col s-center items-center">
+               
+                <h1 class="t-white poppins">Video Chat</h1>
+                <p class="t-white poppins">Video Chat with the help of Django, HTML, CSS, Javascript</p>
+                <div class="buttons flex s-around">
+                    <a href="" target="_blanks"
+                        class="btn mx-1 m-top">GitHub</a>
+                </div>
+            </div>
+
+         </div>
+
+        </div>
+    </section>
+    
+    
+    <!-- Contact Me Section -->
+    <section id="Contact" class="m-b-1">
+        <h1 class=" t-center my-2 t-white f-2">Contact Me</h1>
+        <div class="contact-container flex s-around items-centers">
+            <div class="form" id="contactForm">
+                <form method="post" > 
+                    {% csrf_token %}
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
+                    </div>
+
+                    <div class="email form-div">
+                        <input type="email" name="email" id="" class="poppins" placeholder="Enter Your Email"
+                            required>
+                    </div>
+
+                    <div class="phone form-div">
+                        <input type="phone" name="number" id="" class="poppins" placeholder="Enter Your Phone"
+                            required>
+                    </div>
+                    
+                    <div class="textarea form-div">
+                        <textarea name="content" id="textarea" cols="30" rows="10" class="poppins"
+                            placeholder="Enter Messages"></textarea>
+                    </div>
+                    <button type="submit" class="btn poppins" id="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Footer Section -->
+     <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="poppinss">Home</a></li>
+            <li><a href="#about" class="poppinss">About</a></li>
+            <li><a href="#skills" class="poppinss">Skills</a></li>
+            <li><a href="#projects" class="poppinss">Projects</a></li>
+            <li><a href="#portfolio" class="poppinss">Portfolio</a></li>
+        </ul>
+        <ul class="flex s-center w-80 font-awesome ">
+            <a href="https://www.linkedin.com/in/arnab-mukherjee-859070228/" target="_blank">
+                <li><i class="fa-brands fa-linkedin-in">Linkedin</i></li>
+            </a>
+            <a href="https://github.com/Arnab711" target="_blank">
+                <li><i class="fa-brands fa-github">GitHub</i></li>
+            </a>
+                <a href="https://www.instagram.com/arnab_710/" target="_blank">
+                    <li><i class="fa-brands fa-instagram">Instagram</i></li>
+            </a>
+            </a>
+            <a href="https://leetcode.com/u/hellothere1917/" target="_blank">
+            <li><i class="fa-brands fa-leetcode">Leetcode</i></li>
+            </a>
+        </ul>
+        <p class="t-center my-2 poppins">&copy; All Rights Reserved - <span class="cpy-white poppins">By Grasper
+                </span></p>
+
+    </footer>
+     
+
+
+    </body>
+</html>
